@@ -39,7 +39,7 @@ public class AppConfiguration {
 	private CorsConfigurationSource corsConfigurationSource() {
 		return request -> {
 			CorsConfiguration cfg = new CorsConfiguration();
-			cfg.setAllowedOriginPatterns(Arrays.asList("https://helpdesk-web-react.vercel.app/"));
+			cfg.setAllowedOriginPatterns(Arrays.asList("https://helpdesk-web-react.vercel.app"));
 			cfg.setAllowedMethods(Collections.singletonList("*"));
 			cfg.setAllowCredentials(true);
 			cfg.setAllowedHeaders(Collections.singletonList("*"));
